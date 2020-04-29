@@ -115,7 +115,7 @@ public class game_window extends JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setMaximumSize(new java.awt.Dimension(500, 500));
         jPanel1.setMinimumSize(new java.awt.Dimension(500, 500));
         jPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -233,10 +233,7 @@ public class game_window extends JFrame {
         int j = evt.getX() * width / jPanel1.getWidth();
         int i = evt.getY() * height / jPanel1.getHeight();
         if(i >=0 && j >= 0 && i < 50 && j< 50){
-            if(nameOfPatterns.get(currentPattern) == "own" || check){
             currentMove[i][j] = true;
-        }
-        else currentMove[i][j] = false;
         }
         draw();
     }//GEN-LAST:event_jPanel1MouseDragged

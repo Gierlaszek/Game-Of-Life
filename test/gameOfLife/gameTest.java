@@ -5,6 +5,7 @@
  */
 package gameOfLife;
 
+import GUI.start_window;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -38,5 +39,11 @@ public class gameTest {
         boolean result = intance.transitions(1, 1);
         boolean expResult = true;
         assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testMain(){
+        String[] args = null;
+        game.main(args);
     }
 }

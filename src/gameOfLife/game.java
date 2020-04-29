@@ -10,7 +10,7 @@ import java.util.TimerTask;
  */
 
 /*
- *  class game -  contains game engine, 
+ *  class game -  contains game engine and method main 
  *  it describes the methods of moving living cells
  */
 public class game {
@@ -78,6 +78,11 @@ public class game {
             }
         }
         return currentMove;
+    }
+    
+    public static void main(String args[]){
+        start_window main_window = new start_window();
+        main_window.setVisible(true);
     }
     
 }
